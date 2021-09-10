@@ -8,4 +8,7 @@ import javax.persistence.Id;
 
 @Repository
 public interface DepartmentRepository extends JpaRepository<Department,Long> {
+
+    Department findByDepartmentId(Long departmentId);
+
 }
